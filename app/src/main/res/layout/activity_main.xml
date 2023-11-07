@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/resume"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/personal_details"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/full_name"
+            android:textColorHint="#8D6E63"/>
+
+        <EditText
+            android:id="@+id/edtbirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/birth_date"
+            android:inputType="date"
+            android:textColorHint="#8D6E63"/>
+
+        <EditText
+            android:id="@+id/edtcnt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/contact"
+            android:inputType="number"
+            android:textColorHint="#8D6E63"/>
+
+        <EditText
+            android:id="@+id/edtmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/mail_id"
+            android:textColorHint="#8D6E63"/>
+
+        <EditText
+            android:id="@+id/edtadd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/address"
+            android:textColorHint="#8D6E63"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/eduction"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtdegree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/degree"
+            android:textColorHint="#8D6E63"/>
+
+        <EditText
+            android:id="@+id/edthigh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/high_school"
+            android:textColorHint="#8D6E63"/>
+
+        <EditText
+            android:id="@+id/edtclg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/collage_univarsity_school"
+            android:textColorHint="#8D6E63" />
+
+        <EditText
+            android:id="@+id/edtpassy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/passing_year"
+            android:textColorHint="#8D6E63" />
+
+        <EditText
+            android:id="@+id/edtpr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/percentage_cgpa"
+            android:textColorHint="#8D6E63" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/laungage"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/laungage1"
+            android:textColorHint="#8D6E63" />
+
+        <EditText
+            android:id="@+id/edtl2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/laungage2"
+            android:textColorHint="#8D6E63" />
+
+        <EditText
+            android:id="@+id/edtl3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/laungage3"
+            android:textColorHint="#8D6E63" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/skill"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edts1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/skill1" />
+
+        <EditText
+            android:id="@+id/edts2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/skill2"
+            android:textColorHint="#8D6E63" />
+
+        <EditText
+            android:id="@+id/edts3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/skill3"
+            android:textColorHint="#8D6E63" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/hobby"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+
+            android:id="@+id/edth1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hobby1"
+            android:textColorHint="#8D6E63" />
+
+        <EditText
+            android:id="@+id/edth2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hobby2"
+            android:textColorHint="#8D6E63" />
+
+        <EditText
+            android:id="@+id/edth3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hobby3"
+            android:textColorHint="#8D6E63" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/objective"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/edtobj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/objective1"
+            android:textColorHint="#8D6E63"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:backgroundTint="#5690D8"/>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

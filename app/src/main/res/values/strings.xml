@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">My Resume</string>
+    <string name="full_name">Full Name</string>
+    <string name="birth_date">Birth Date</string>
+    <string name="resume">Resume</string>
+    <string name="contact">Contect</string>
+    <string name="mail_id">Mail Id</string>
+    <string name="address">Address</string>
+    <string name="eduction">Eduction</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="degree">Degree</string>
+    <string name="high_school">High School</string>
+    <string name="collage_univarsity_school">Collage/Univarsity/School</string>
+    <string name="passing_year">Passing Year</string>
+    <string name="percentage_cgpa">Percentage/CGPA</string>
+    <string name="skill1">Skill1</string>
+    <string name="skill3">Skill3</string>
+    <string name="skill2">Skill2</string>
+    <string name="laungage">Laungage</string>
+    <string name="laungage1">Laungage1</string>
+    <string name="laungage2">Laungage2</string>
+    <string name="laungage3">Laungage3</string>
+    <string name="hobby">Hobby</string>
+    <string name="hobby1">Hobby1</string>
+    <string name="hobby2">Hobby2</string>
+    <string name="hobby3">Hobby3</string>
+    <string name="skill">Skill</string>
+    <string name="objective">Objective</string>
+    <string name="objective1">Objective</string>
+    <string name="submit">Submit</string>
+</resources>
