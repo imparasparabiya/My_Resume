@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:background="@drawable/b2"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -11,28 +13,47 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/resume"
-            android:textSize="25sp"
-            android:textStyle="bold" />
+            android:layout_gravity="center"
+            app:cardCornerRadius="5sp"
+            app:cardBackgroundColor="#35CEFF"
+            app:cardElevation="10sp">
 
-        <TextView
-            android:layout_width="match_parent"
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/resume"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/personal_details"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            app:cardCornerRadius="5sp"
+            app:cardBackgroundColor="#579BED"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/personal_details"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
 
         <EditText
             android:id="@+id/edtname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/full_name"
-            android:textColorHint="#8D6E63"/>
+            android:textColorHint="#8D6E63"
+            tools:ignore="Autofill,TextFields,VisualLintTextFieldSize" />
 
         <EditText
             android:id="@+id/edtbirth"
@@ -40,7 +61,8 @@
             android:layout_height="wrap_content"
             android:hint="@string/birth_date"
             android:inputType="date"
-            android:textColorHint="#8D6E63"/>
+            android:importantForAutofill="no"
+            android:textColorHint="#8D6E63" />
 
         <EditText
             android:id="@+id/edtcnt"
@@ -48,21 +70,33 @@
             android:layout_height="wrap_content"
             android:hint="@string/contact"
             android:inputType="number"
-            android:textColorHint="#8D6E63"/>
+            android:textColorHint="#8D6E63"
+            tools:ignore="Autofill,TextContrastCheck" />
 
         <EditText
             android:id="@+id/edtmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/mail_id"
-            android:textColorHint="#8D6E63"/>
+            android:inputType="textEmailAddress"
+            android:textColorHint="#8D6E63"
+            tools:ignore="Autofill,TextContrastCheck" />
 
         <EditText
             android:id="@+id/edtadd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/address"
-            android:textColorHint="#8D6E63"/>
+            android:autofillHints=""
+            android:textColorHint="#8D6E63"
+            tools:ignore="TextFields" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5sp"
+            app:cardBackgroundColor="#579BED"
+            android:layout_gravity="center">
 
         <TextView
             android:layout_width="match_parent"
@@ -72,32 +106,40 @@
             android:textSize="20sp"
             android:textStyle="bold" />
 
+        </androidx.cardview.widget.CardView>
+
         <EditText
             android:id="@+id/edtdegree"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/degree"
-            android:textColorHint="#8D6E63"/>
+            android:textColorHint="#8D6E63"
+            tools:ignore="Autofill,TextContrastCheck,TextFields" />
 
         <EditText
             android:id="@+id/edthigh"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/high_school"
-            android:textColorHint="#8D6E63"/>
+            android:textColorHint="#8D6E63"
+            tools:ignore="Autofill,TextFields,VisualLintTextFieldSize" />
 
         <EditText
             android:id="@+id/edtclg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/collage_univarsity_school"
-            android:textColorHint="#8D6E63" />
+            android:importantForAutofill="no"
+            android:textColorHint="#8D6E63"
+            tools:ignore="TextFields" />
 
         <EditText
             android:id="@+id/edtpassy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/passing_year"
+            android:importantForAutofill="no"
+            android:inputType="number"
             android:textColorHint="#8D6E63" />
 
         <EditText
@@ -105,8 +147,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/percentage_cgpa"
+            android:importantForAutofill="no"
+            android:inputType="number"
             android:textColorHint="#8D6E63" />
 
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5sp"
+            app:cardBackgroundColor="#579BED"
+            android:layout_gravity="center">
 
         <TextView
             android:layout_width="match_parent"
@@ -116,27 +166,38 @@
             android:textSize="20sp"
             android:textStyle="bold" />
 
+        </androidx.cardview.widget.CardView>
+
         <EditText
             android:id="@+id/edtl1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/laungage1"
-            android:textColorHint="#8D6E63" />
+            android:textColorHint="#8D6E63"
+            tools:ignore="Autofill,TextFields,VisualLintTextFieldSize" />
 
         <EditText
             android:id="@+id/edtl2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/laungage2"
-            android:textColorHint="#8D6E63" />
+            android:textColorHint="#8D6E63"
+            tools:ignore="Autofill,TextFields" />
 
         <EditText
             android:id="@+id/edtl3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/laungage3"
-            android:textColorHint="#8D6E63" />
+            android:textColorHint="#8D6E63"
+            tools:ignore="Autofill,TextFields" />
 
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5sp"
+            app:cardBackgroundColor="#579BED"
+            android:layout_gravity="center">
 
         <TextView
             android:layout_width="match_parent"
@@ -146,25 +207,39 @@
             android:textSize="20sp"
             android:textStyle="bold" />
 
+        </androidx.cardview.widget.CardView>
+
         <EditText
             android:id="@+id/edts1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/skill1" />
+            android:hint="@string/skill1"
+            android:textColorHint="#8D6E63"
+            tools:ignore="Autofill,TextFields" />
 
         <EditText
             android:id="@+id/edts2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/skill2"
-            android:textColorHint="#8D6E63" />
+            android:textColorHint="#8D6E63"
+            tools:ignore="Autofill,TextFields" />
 
         <EditText
             android:id="@+id/edts3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/skill3"
-            android:textColorHint="#8D6E63" />
+            android:textColorHint="#8D6E63"
+            tools:ignore="Autofill,TextFields" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5sp"
+            app:cardBackgroundColor="#579BED"
+            android:layout_gravity="center">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -173,27 +248,42 @@
             android:textSize="20sp"
             android:textStyle="bold" />
 
+        </androidx.cardview.widget.CardView>
+
         <EditText
 
             android:id="@+id/edth1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/hobby1"
-            android:textColorHint="#8D6E63" />
+            android:importantForAutofill="no"
+            android:textColorHint="#8D6E63"
+            tools:ignore="TextFields" />
 
         <EditText
             android:id="@+id/edth2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/hobby2"
-            android:textColorHint="#8D6E63" />
+            android:autofillHints=""
+            android:textColorHint="#8D6E63"
+            tools:ignore="TextFields" />
 
         <EditText
             android:id="@+id/edth3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/hobby3"
-            android:textColorHint="#8D6E63" />
+            android:autofillHints=""
+            android:textColorHint="#8D6E63"
+            tools:ignore="TextFields" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5sp"
+            app:cardBackgroundColor="#579BED"
+            android:layout_gravity="center">
 
         <TextView
             android:layout_width="match_parent"
@@ -203,13 +293,24 @@
             android:textStyle="bold"
             android:gravity="center"/>
 
+        </androidx.cardview.widget.CardView>
+
         <EditText
             android:id="@+id/edtobj"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/objective1"
             android:textColorHint="#8D6E63"
-            tools:ignore="DuplicateSpeakableTextCheck" />
+            android:importantForAutofill="no"
+            tools:ignore="DuplicateSpeakableTextCheck,TextFields" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5sp"
+            app:cardBackgroundColor="#579BED"
+            android:layout_gravity="center">
+
         <Button
             android:id="@+id/btn"
             android:layout_width="wrap_content"
@@ -219,6 +320,8 @@
             android:layout_gravity="center"
             android:textSize="18sp"
             android:backgroundTint="#5690D8"/>
+
+        </androidx.cardview.widget.CardView>
 
 
     </LinearLayout>

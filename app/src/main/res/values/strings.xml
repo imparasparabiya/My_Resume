@@ -28,4 +28,10 @@
     <string name="objective">Objective</string>
     <string name="objective1">Objective</string>
     <string name="submit">Submit</string>
+    <string name="todo">TODO</string>
+    <string name="phoneLogo">☎</string>
+    <string name="mailLogo">✉</string>
+    <string name="DateLogo">📆</string>
+    <string name="s_s_c_h_s_c">S.S.C / H.S.C</string>
+    <string name="addLogo">📍</string>
 </resources>
